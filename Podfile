@@ -2,9 +2,11 @@
 # platform :ios, '9.0'
 
 target 'Spex' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
+  pod 'MotionKit', :git=> 'https://github.com/finngaida/MotionKit.git'
+end
 
-  # Pods for Spex
+target 'Extension' do
+  use_frameworks!
   pod 'MotionKit', :git=> 'https://github.com/finngaida/MotionKit.git'
 end
